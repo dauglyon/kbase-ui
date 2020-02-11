@@ -18,7 +18,7 @@ ARG BUILD
 
 # This actually builds the ui codebase. Note that the build-arg BUILD is passed along
 # as an environment variabl 'build'.
-RUN make setup && make build config=$BUILD
+RUN make setup && make build config=prod
 #  && make docs
 
 # Run unit tests.
